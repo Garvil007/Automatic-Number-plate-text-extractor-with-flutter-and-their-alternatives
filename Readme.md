@@ -17,6 +17,7 @@ This repository contains three Python-based implementations for license plate de
   - [live.py](#livepy)
   - [Flutter App Frontend](#flutter-app-frontend)
 - [API Endpoints](#api-endpoints)
+- [Demonstration Video](#demonstration-video)
 - [Acknowledgements](#acknowledgements)
 
 ---
@@ -182,6 +183,14 @@ The Flutter app serves as the frontend for the license plate detection system. T
 
 ---
 
+## Demonstration Video
+
+Watch the live demonstration of the License Plate Recognition System in action, integrating the Flutter frontend with the Flask backend:
+
+[![Watch the video](https://img.youtube.com/vi/MdzqFJPqBKI/0.jpg)](https://youtu.be/MdzqFJPqBKI)
+
+---
+
 ## Acknowledgements
 
 - [YOLO](https://github.com/ultralytics/yolov5)
@@ -195,4 +204,3 @@ The Flutter app serves as the frontend for the license plate detection system. T
 ## License
 
 This project is licensed under Garvil Shah. See the `LICENSE` file for details.
-
