@@ -15,6 +15,7 @@ This repository contains three Python-based implementations for license plate de
   - [combine.py](#combinepy)
   - [final_combine4.py](#final_combine4py)
   - [live.py](#livepy)
+  - [Flutter App Frontend](#flutter-app-frontend)
 - [API Endpoints](#api-endpoints)
 - [Acknowledgements](#acknowledgements)
 
@@ -48,6 +49,7 @@ The project leverages object detection and OCR technologies to detect and recogn
 ├── final_combine4.py   # Detection and recognition on static images with TrOCR
 ├── live.py             # Flask API for live license plate detection
 ├── requirements.txt    # Required Python dependencies
+├── FlutterApp/         # Directory containing the Flutter app source code
 └── README.md           # Project documentation
 ```
 
@@ -61,6 +63,7 @@ The project leverages object detection and OCR technologies to detect and recogn
 - TrOCR
 - PaddleOCR
 - Flask
+- Flutter SDK
 
 ---
 
@@ -91,6 +94,22 @@ The project leverages object detection and OCR technologies to detect and recogn
    ```env
    API_KEY=your_api_key_here
    ```
+
+5. **Set up the Flutter App Frontend:**
+
+   - Navigate to the `FlutterApp/` directory:
+     ```bash
+     cd FlutterApp
+     ```
+   - Ensure you have the Flutter SDK installed. If not, follow the instructions [here](https://flutter.dev/docs/get-started/install).
+   - Run the following command to fetch dependencies:
+     ```bash
+     flutter pub get
+     ```
+   - To run the app on a local emulator or connected device:
+     ```bash
+     flutter run
+     ```
 
 ---
 
@@ -128,6 +147,23 @@ Start the Flask API server for live video processing:
 python live.py
 ```
 
+---
+
+### Flutter App Frontend
+
+The Flutter app serves as the frontend for the license plate detection system. To use it:
+
+1. Ensure the backend Flask API is running locally or hosted.
+2. Update the API endpoint in the Flutter app source code (found in `FlutterApp/lib/constants.dart`) to match your backend URL.
+3. Build and run the Flutter app:
+
+   ```bash
+   cd FlutterApp
+   flutter run
+   ```
+
+---
+
 ### API Endpoints
 
 1. **Start Live OCR:**
@@ -152,10 +188,9 @@ python live.py
 - [TrOCR](https://huggingface.co/microsoft/trocr-base-printed)
 - [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 - [Flask](https://flask.palletsprojects.com/)
+- [Flutter](https://flutter.dev/)
 
 ---
-
-
 
 ## License
 

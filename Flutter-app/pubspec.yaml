@@ -1,0 +1,46 @@
+name: vehicle_management_system
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.7.0
+  animated_bottom_navigation_bar: ^1.0.6
+  url_launcher: ^6.3.0
+  camera: ^0.10.0+1
+  image_picker: ^0.8.4+2
+  image: ^3.0.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/login.png
+    - assets/images/car.png
+    - assets/images/contact_us.png
+    - assets/images/logo.png
+    - assets/images/about.png
+    - assets/images/logout.png
+    - assets/images/account.png
+    - assets/images/scanner.png
+    - assets/images/barcode.png
+    - assets/images/linkedin.png
+    - assets/images/facebook.png
+    - assets/images/twitter.png
+    - assets/images/instagram.png
+    - assets/models/yolo.pt
+    - assets/models/detect.tflite
+  # uses-material-design: true
